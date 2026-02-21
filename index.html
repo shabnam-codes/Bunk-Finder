@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunk Finder</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="attendance-form">
+    <label for="daily_classes">Enter Number of Classes per Day</label>
+    <input type="number" id="daily_classes" name="daily_classes" placeholder="e.g. 6">
+
+    <label for="working_days">Enter Number of Working Days in the Semester</label>
+    <input type="number" id="working_days" name="working_days" placeholder="e.g. 90">
+
+    <label for="current_percentage">Enter Current Percentage</label>
+    <input type="number" id="current_percentage" name="current_percentage" placeholder="e.g. 78">
+
+    <label for="current_taken">Enter Classes Taken So far</label>
+    <input type="number" id="classes_taken" name="current_taken" placeholder="e.g. 252">
+    <div class="button-group">
+        <button type="button" class="calculate-btn" onclick="calculateAttendance()">Calculate</button>
+    </div>
+    <div class = "result-box">
+        <p id="result" style="margin-top:10px; font-size:18px;"></p>
+    </div>
+    </form>
+    <footer>
+        <p>Made By Shabnam Banu     
+            <a href="https://github.com/shabnam-codes" target="_blank">
+                <i class="fa-brands fa-github"></i> 
+            </a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

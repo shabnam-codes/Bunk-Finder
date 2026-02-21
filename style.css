@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.container {
+    background: rgba(0,0,0,0.6);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    min-width: 00px;
+}
+
+.attendance-form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    width: 400px;
+}
+
+.attendance-form label {
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.attendance-form input {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    background: rgba(255,255,255,0.15);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.attendance-form input[type="number"]::-webkit-inner-spin-button,
+.attendance-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.attendance-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Focus effect */
+.attendance-form input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px #000000;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-group button {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #5f5a5a;
+    color: white;
+}
+
+.calculate-btn {
+    background: #5a5859;
+    color: white;
+}
+
+.calculate-btn:hover {
+    background: #383637;
+}
+
+.reset-btn {
+    background: #5a5859;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #383637;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 0, 0, 0.7);
+    font-size: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration-thickness: 3px;
+    font-weight: 500;
+}
+
+footer a i {
+    margin-right: 6px;
+    font-size: 20px;
+    text-decoration-thickness: 3px;
+}
+
+footer a:hover {
+    color: #000000;
+}
+#result {
+    margin-top: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+
+    text-align: center;
+    white-space: pre-line;
+
+    width: 400px;            
+    min-height: 30px;         
+
+    padding: 10px 10px;
+
+    margin-left: auto;
+    margin-right: 120px;
+
+    display: block;          
+}
