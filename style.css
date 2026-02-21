@@ -26,25 +26,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;  
-    width: 400px;
+    width: 90%;
+    max-width:400px;
 }
 
 .attendance-form label {
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     margin-top: 1px;
     margin-bottom: 5px;
 }
 
 .attendance-form input {
     padding: 15px;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 18px);
     border-radius: 10px;
     border: 2px solid #555;
     background: rgba(255,255,255,0.15);
     color: rgb(0, 0, 0);
     width: 100%;
     padding: 12px;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .attendance-form input[type="number"]::-webkit-inner-spin-button,
@@ -74,7 +75,7 @@ body {
     width: 100%;
     margin-top: 2px;
     padding: 10px;
-    font-size: 22px;
+    font-size: clamp(14px, 2vw, 18px);
     border-radius: 12px;
     border: none;
     cursor: pointer;
@@ -108,7 +109,7 @@ footer {
     text-align: center;
     padding: 10px;
     background: rgba(255, 0, 0, 0.7);
-    font-size: 15px;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 footer a {
@@ -119,7 +120,7 @@ footer a {
 
 footer a i {
     margin-right: 6px;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 18px);
     text-decoration-thickness: 3px;
 }
 
@@ -129,14 +130,15 @@ footer a:hover {
 #result {
     margin-top: 5px;
 
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 18px);
     font-weight: bold;
     color: red;
 
     text-align: center;
     white-space: pre-line;
 
-    width: 400px;            
+    width: 90%;
+    max-width:500px;
     min-height: 30px;         
 
     padding: 10px 10px;
@@ -145,4 +147,5 @@ footer a:hover {
     margin-right: 120px;
 
     display: block;          
+
 }
